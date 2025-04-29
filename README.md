@@ -1,4 +1,4 @@
-# A hybrid perceptron with cross-domain transferability towards active steadystate non-line-of-sight imaging
+# A hybrid perceptron with cross-domain transferability towards active steady-state non-line-of-sight imaging
 # Project description
 Datasets and source code for enhancing active steady-state non-line-of-sight imaging using a hybrid perceptron with cross-domain transferability
 
