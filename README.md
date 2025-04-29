@@ -1,6 +1,7 @@
 # A hybrid perceptron with cross-domain transferability towards active steady-state non-line-of-sight imaging
 ## Introduction
 This is an official PyTorch implementation of **"A hybrid perceptron with cross-domain transferability towards active steady-state non-line-of-sight imaging"**. Datasets and source code are available here. If you find this work is useful, please give it a star ⭐ and consider citing this paper in your research. Thank you!
+![alt text](image.png)
 
 ## Dependencies and Installation
 
