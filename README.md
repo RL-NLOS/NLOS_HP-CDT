@@ -57,13 +57,13 @@ This dataset is designed for Active Steady-State NLOS Imaging and supports the t
 **Path**: CDT-training_phase1/Auto_encoding/LOS_signal/  
 **Purpose**: Train an autoencoder model to capture the structural priors of Line-of-Sight (LOS) signals.  
 **Quantity**: 4,200 LOS images.  
-**Description**: All images are collected from visible scenes to learn the basic visual representations.  
+**Description**: All images are collected from visible scenes to learn the latent LOS representations.  
 
 📌 **Phase 2: Cross-Domain Pretraining on NLOS Signals (corresponding to the Stage 2 in the paper)**  
 **Path**: CDT-training_phase2/CDT/NLOS_signal/  
 **Purpose**: Adapt the model to the distribution of LOS images through unsupervised learning, enhancing the encoder's cross-domain generalization ability.  
 **Quantity**: 4,200 NLOS images.  
-**Description**: This phase does not rely on labels and is solely intended for feature pre-adaptation training.  
+**Description**: This phase does not rely on labels and is solely intended for CDT learning and feature pre-adaptation training.  
 
 📌 **Phase 3: Fine-Tuning with Paired NLOS–LOS Signals (corresponding to the Stage 3 in the paper)**  
 **Paths**:  
