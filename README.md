@@ -29,6 +29,7 @@ doi = {https://doi.org/10.1016/j.sigpro.2025.110072},
 url = {https://www.sciencedirect.com/science/article/pii/S0165168425001860},
 author = {Rui Liang and Xi Tong and Jiangxin Yang and Yanpeng Cao}
 }
+```
 
 ## References
 [1] W. Chen, S. Daneau, F. Mannan, F. Heide, Steady-state non-line-of-sight imaging, in: Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 2019, pp. 6783–6792. doi:10.1109/CVPR.2019.00695.
