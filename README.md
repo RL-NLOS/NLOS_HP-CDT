@@ -43,11 +43,11 @@ NLOS_real-world_datasets/
     ├── test/
     │   ├── im00000.png
     │   ├── im00001.png
-    │   └── ... (共420)
+    │   └── ... (420)
     └── ground_truth/
         ├── im00000.png
         ├── im00001.png
-        └── ... (共420)
+        └── ... (420)
 ```
 
 ### Train / Evaluate
