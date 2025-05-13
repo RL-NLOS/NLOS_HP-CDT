@@ -14,6 +14,43 @@ To set up the environment, please make sure you have Python 3.7 (or higher) and 
 ## Datasets
 Datasets used in this work include both synthetic and real-world data. The rendering pipeline for the synthetic dataset is based on [1]. The real-world dataset contains 4,620 non-line-of-sight (NLOS) image pairs captured from real-world scenes. The data includes 660 digits (ranging from 0 to 9) from the MNIST handwritten digit database, all manufactured using 3D printing technology. Out of these, 4,200 pairs are used for training/validation, and 420 pairs are used for testing/evaluation. Download the real-world dataset here [https://github.com/RL-NLOS/NLOS_HP-CDT/releases].
 
+### Datasets structure
+NLOS_real-world_datasets/
+├── CDT-training_phase1/
+│   └── Auto_encoding/
+│       └── LOS_signal/
+│           ├── im00000.png
+│           ├── im00001.png
+│           └── ... (4,200)
+├── CDT-training_phase2/
+│   └── CDT/
+│       └── NLOS_signal/
+│           ├── im00000.png
+│           ├── im00001.png
+│           └── ... (4,200)
+├── CDT-training_phase3/
+│   └── CDT_for_fine-tuning/
+│       ├── NLOS_signal/
+│       │   ├── im00000.png
+│       │   ├── im00001.png
+│       │   └── ... (4,200)
+│       └── LOS_signal/  # Ground truth
+│           ├── im00000.png
+│           ├── im00001.png
+│           └── ... (4,200)
+└── test&eval/
+    ├── test/
+    │   ├── im00000.png
+    │   ├── im00001.png
+    │   └── ... (共420)
+    └── ground_truth/
+        ├── im00000.png
+        ├── im00001.png
+        └── ... (共420)
+
+## Train / Evaluate
+
+
 ## Citation
 If you find this code or dataset helpful, please cite the following paper:
 
