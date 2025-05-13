@@ -50,8 +50,36 @@ NLOS_real-world_datasets/
         └── ... (共420)
 ```
 
-## Train / Evaluate
+### Train / Evaluate
+This dataset is designed for Active Steady-State NLOS Imaging and supports the training pipeline based on a three-stage cross-domain transfer (CDT) learning strategy. The purpose of each phase is as follows:
 
+📌 Phase 1: Auto-Encoding on LOS Signals (corresponding to the Stage 1 in the paper)
+Path: CDT-training_phase1/Auto_encoding/LOS_signal/
+Purpose: Train an autoencoder model to capture the structural priors of Line-of-Sight (LOS) signals.
+Quantity: 4,200 LOS images.
+Description: All images are collected from visible scenes to learn the basic visual representations.
+
+📌 Phase 2: Cross-Domain Pretraining on NLOS Signals (corresponding to the Stage 2 in the paper)
+Path: CDT-training_phase2/CDT/NLOS_signal/
+Purpose: Adapt the model to the distribution of LOS images through unsupervised learning, enhancing the encoder's cross-domain generalization ability.
+Quantity: 4,200 NLOS images.
+Description: This phase does not rely on labels and is solely intended for feature pre-adaptation training.
+
+📌 Phase 3: Fine-Tuning with Paired NLOS–LOS Signals (corresponding to the Stage 3 in the paper)
+Paths:
+Input: CDT-training_phase3/CDT_for_fine-tuning/NLOS_signal/
+Labels: CDT-training_phase3/CDT_for_fine-tuning/LOS_signal/
+Purpose: Perform supervised fine-tuning with paired NLOS inputs and LOS ground truth images to optimize the quality of the decoder output.
+Quantity: 4200 image pairs (input + label).
+Description: This phase is used to further improve the reconstruction quality.
+
+🧪 Test & Evaluation
+Paths:
+Test images: test&eval/test/
+Ground truth images: test&eval/ground_truth/
+Purpose: Validate the model's performance on unseen samples.
+Quantity: 420 image pairs.
+Description: Real NLOS test samples and their corresponding ground truth images for final evaluation and visual comparison.
 
 ## Citation
 If you find this code or dataset helpful, please cite the following paper:
