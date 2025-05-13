@@ -53,7 +53,7 @@ NLOS_real-world_datasets/
 ### Train / Evaluate
 This dataset is designed for Active Steady-State NLOS Imaging and supports the training pipeline based on a three-stage cross-domain transfer (CDT) learning strategy. The purpose of each phase is as follows:
 
-📌 Phase 1: Auto-Encoding on LOS Signals (corresponding to the Stage 1 in the paper)
+** Phase 1: Auto-Encoding on LOS Signals (corresponding to the Stage 1 in the paper) **
 Path: CDT-training_phase1/Auto_encoding/LOS_signal/
 Purpose: Train an autoencoder model to capture the structural priors of Line-of-Sight (LOS) signals.
 Quantity: 4,200 LOS images.
