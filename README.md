@@ -73,7 +73,7 @@ Purpose: Perform supervised fine-tuning with paired NLOS inputs and LOS ground t
 Quantity: 4200 image pairs (input + label).
 Description: This phase is used to further improve the reconstruction quality.
 
-**The dataset can be split into 80% for training and 20% for validation or others depending on the use case.**
+**The training dataset can be split into 80% for training and 20% for validation or others depending on the use case.**
 
 📌 Test & Evaluation
 Paths:
